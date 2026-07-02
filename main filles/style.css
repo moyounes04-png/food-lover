@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 350px;
+}
+
+header .container .btn{
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+
+#home{
+    height: 100vh;
+    max-width: 100vw;
+    background: url(./img/home_bg.jpeg) center center/cover no-repeat;
+    position: relative;
+}
+
+#home .container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.541);
+}
+#home .navbar{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 85455;
+}
+
+header .navbar .logo img{
+    width: 85px;
+}
+
+header .navbar ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 15px;
+    position: relative;
+}
+
+
+header .navbar ul li a{
+    cursor: pointer;
+    transition: .2s;
+    padding: 15px 20px;
+}
+
+header .navbar ul li a:hover{
+    border-bottom: 2px solid #e4b95b;
+}
+
+header .container .content{
+    height: 75%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .content .main-title h1{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+header .container .content .main-title h1 span{
+    color: #e4b95b;
+}
+
+header .container .content .btn-div button{
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  scale: 1.1;
+  transition: .4s;
+}
+
+header .container .content .btn-div button:hover{
+    background: #e4b95b;
+}
+header .container .content .btn-div .btn a{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+
+header .container .content .p p{
+    margin: 20px 0 40px;
+}
+
+
+
+
+/*second section*/
+
+
+.second{
+    height: 80vh;
+    width: 100%;
+    background: #f4f4f4;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.second .container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 7vh;
+}
+
+.second .container .top-section .second-title p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.second .container p{
+  margin-right: 7rem;
+  line-height: 1.6;
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+.second .container h1{
+    color: #383848;
+    text-transform: capitalize;
+}
+
+.second .container .mid-section .left-section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+}
+
+.second .container .mid-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second .container .mid-section .right-section img{
+    transform: scale(1.1);
+    transition: .4s;
+}
+.second .container .mid-section .right-section img:hover{
+    transform: scale(1.2);
+}
+
+.second .container .mid-section .left-section .button button{
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #383848;
+  transition: .4s;
+  margin-top: 10px;
+}
+
+.second .container .mid-section .left-section .button button a{
+    color: white;
+    font-size: 17px;
+}
+
+.second .container .mid-section .left-section .button button:hover{
+    background: #e4b95b;
+}
+
+
+/*offers section*/
+
+.plats .container img{
+    max-width: 200px;    
+}
+
+.plats .container .plat:hover .box{
+    animation: plat 7.5s 0.2s 1 forwards ease-in-out;
+}
+
+@keyframes plat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+        rotate: 360deg;
+    }
+    100%{
+       transform: scale(1);
+    }
+}
+
+
+.plats{
+    max-width: 100vw;
+    height: 80vh;
+    background: url(img/offer-background.jpg) center center/cover no-repeat;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.plats .container{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.plats .container .top{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.plats .container .top .main-title h2{
+    color: #e4b95b;
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+.plats .container .top .second-title p{
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.plats .container .mid{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    width:100%;
+}
+
+.plats .container .mid .plat{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 0;
+}
+
+.plats .container .mid .plat .title h3{
+    font-size: 25px;
+}
+
+.plats .container .mid .plat .p p{
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.plats .container .mid .plat .price{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.price .before{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.price .after{
+    font-weight: bold;
+    position: relative;
+}
+
+.price .after p{
+    color: #e4b95b;
+}
+
+.price .after p::after{
+    content: '-32%';
+    color: #e4b95b;
+    font-size: 10px;
+    position: absolute;
+    top: -2px;
+    left: 49px;
+    transition: 1s ease-out;
+}
+
+/*menu section*/
+
+.menu {
+  background: #f4f2ed;
+  padding: 5rem 0;
+  min-height: 120vh;
+}
+
+.menu img{
+    max-width: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.menu .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .container .top {
+        text-align: center;
+        margin-bottom: 60px;
+}
+
+.menu .container .top .main-title h2{
+    color: #383848;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.menu .container .top .second-title p{
+    color: #9a9a9a;
+    font-weight: 500;
+}
+
+.menu .container .mid{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.menu .container .mid .line{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.menu .container .mid .box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    min-width: 520px;
+    width: 550px;
+    margin-bottom: 0;
+}
+
+.menu .container .mid .box span{
+    color: #383848;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.menu .container .mid .box .text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu .container .mid .box .text .name-price{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-bottom: 17px;
+    border-bottom: dashed 1px #c2bdbd;
+}
+
+.second-line{
+    margin-left: -20px;
+}
+
+
+.menu .container .mid .box .text .name-price span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .container .mid .box .text .name-price .price span{
+    color: #e4b95b;
+}
+
+.menu .container .mid .box .text .name-price .name{
+    min-width: 100px;
+    max-width: 350px;
+    width: 150px;
+    text-align: start;
+}
+
+.menu .container .mid .box .text .disc{
+    max-width: 300px;
+}
+
+.menu .container .mid .box .text .disc p{
+    color: #383848;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.menu .container .btm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+
+}
+
+.btm button{
+    padding: 15px 35px;
+    background: #e4b95b;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    margin-top: 0x;
+    border-radius: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.btm button:hover{
+    background: #383848;
+}
